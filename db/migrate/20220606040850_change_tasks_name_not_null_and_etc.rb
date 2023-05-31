@@ -1,7 +1,7 @@
 class ChangeTasksNameNotNullAndEtc < ActiveRecord::Migration[5.2]
   def change
     change_column_null :tasks, :name, false
-    add_index :tasks, :name, unique: true
+    # add_index :tasks, :name, unique: true
   end
 
   def up
