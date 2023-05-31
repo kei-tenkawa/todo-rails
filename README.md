@@ -9,6 +9,16 @@
 docker compose run web rails ---
 ```
 
+# Docker
+```
+# オーナー変更
+sudo chown -R 999:999 ./tmp/db
+# パーミッション変更
+sudo chmod 700 ./tmp/db
+# 起動
+docker compose up
+```
+
 # DB接続
 ```
 docker compose run web db
